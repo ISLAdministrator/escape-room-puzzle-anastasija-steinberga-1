@@ -13,16 +13,41 @@ DO NOT let AI code for you!!
   <meta charset="UTF-8">
   <title>Escape Room</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-  <h1>Escape Room</h1>
+  <!-- Slide 1: Intro -->
+  <div id="slide-1" class="slide content-right">
+    <h1>Escape Room</h1>
 
-  <p>
-    Write the story of your escape room here.
-  </p>
+    <p>
+    You slip inside the nurses office and shut the door behind you with a soft click. The room is small so you look at the whole thing in one wheep gaze. As you look around the nurses's desk, you notice the botton that will tell you to press it to open the nurses's log. The book opens up and you might think you are expected to search through all pages to look for the clues, but the game leads you directly to that one specific page. The specific page will require you to solve the riddle to find the clues for going smoothly into your next steps.
+    </p>
+    <button id="button">Click to go to the page</button>
+  </div>
+  <!-- Right side text content -->
+  <div class="content-left">
+    <div class="prescription-list">
+      <p>Alexander need to take <span class="num">21</span>ml of the syrup against the cough, <span class="num">9</span>ml of other syrup and <span class="num">2</span> pills against headache. Mila needs to take <span class="num">4</span> pills per day, <span class="num">9</span>ml of syrup, <span class="num">24</span>ml of vitamin D. Roland needs to take <span class="num">3</span> pills a day, <span class="num">20</span>ml of elixir and get <span class="num">18</span>ml of ibumentin for his daughter. Sasha needs to get <span class="num">9</span>ml of iboprofen syrup for her husband's mom. Lara needs to take <span class="num">1</span> pill of different vitamins per day to stay healthy. Robert needs to take <span class="num">4</span> pills, <span class="num">3</span>ml of syrup and <span class="num">15</span>ml of other syrup for his mom. Alina needs to take <span class="num">4</span> pills per week and bring <span class="num">20</span>ml of medicine for her grandparents.</p>
+    </div>
+  </div>
 
-  <button id="button">Click me</button>
+  <!-- Slide 2: Book -->
+  <div id="slide-2" class="slide hidden">
+    <div class="book-container">
+      <div class="book">
+        <div class="book-page book-left">
+          <div class="page-content"></div>
+        </div>
+        <div class="book-page book-right">
+          <div class="page-content"></div>
+        </div>
+      </div>
+      <button id="button-back">Back</button>
+    </div>
+  </div>
 
   <p id="output"></p>
 
