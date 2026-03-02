@@ -10,5 +10,9 @@ startButton.addEventListener('click', function() {
     firstSlide.style.display = 'none';
     puzzleScreen.style.display = 'block';
     
+    // apply class that gives us a different background and makes it
+    // fit the whole screen (see style.css for details)
+    document.body.classList.add('puzzle');
+    
     console.log("Success! The player moved to the puzzle.");
 });

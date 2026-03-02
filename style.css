@@ -20,6 +20,17 @@ body {
   background-repeat: no-repeat;
 }
 
+/* when the player begins the puzzle we want a different background
+   and ensure the entire picture is visible on the screen. using a
+   class makes the swap easy and keeps our CSS organised. */
+body.puzzle {
+  background-image: url('escape room puzzle.png');
+  background-size: contain;      /* show full image, maintain aspect ratio */
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 .content-right {
   position: absolute;
   right: 20px;
