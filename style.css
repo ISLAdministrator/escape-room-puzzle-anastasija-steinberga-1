@@ -29,6 +29,7 @@ body.puzzle {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-color: #fff9ed;
 }
 
 .content-right {
@@ -88,6 +89,14 @@ p {
   left: -100px;
 }
 
+#nastja-user-input {
+    position: absolute;
+    bottom: 100px; /* This pushes it 20 pixels up from the very bottom */
+    left: 47%;
+    transform: translateX(-50%); /* This centers it perfectly */
+    width: 70%; /* Makes it nice and wide */
+}
+
 button {
   background-color: rgba(255, 255, 255, 0.5);
   border: 2px solid rgb(255, 255, 255);
@@ -99,3 +108,11 @@ button {
   font-family: 'Comfortaa', cursive;
   margin-top: 5px;
 }
+#nastja-submit-textb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} /* <--- This closing bracket tells the browser "I am finished with this ID" */
+  margin-top: 50px;
+  margin-left: 100px;
+

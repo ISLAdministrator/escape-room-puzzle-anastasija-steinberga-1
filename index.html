@@ -15,27 +15,32 @@ DO NOT let AI code for you!!
   <title>Escape Room</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
-  <!-- Slide 1: Intro -->
   <div id="slide-1" class="slide content-right">
     <h1>Escape Room</h1>
-
-    <p> You slip inside the nurses office and shut the door behind you with a soft click. The room is small so you look
-      at the whole thing in one wheep gaze. As you look around the nurses's desk, there you notice the nurses log with
+    <p>
+      You slip inside the nurses office and shut the door behind you with a soft click. The room is small so you look
+      at the whole thing in one sweep gaze. As you look around the nurses's desk, there you notice the nurses log with
       some information. Right down after this passage, you will see the button that you will need to press to open one
-      specific page from nurses's log. The page will open up for you and you will be required to solve the riddle to
-      find the clues for going smoothly into your next steps.</p>
+      specific page from nurses's log.
+    </p>
     <button id="isl-start-btn">Enter the Puzzle</button>
-  </div>
-  <div id="isl-start-screen">
   </div>
 
   <div id="isl-puzzle-screen" style="display: none;">
+<input type="text" id="nastja-user-input" placeholder="Type your answer here...">
+    <button id="nastja-submit-textb">Submit</button>
+    
+    <div id="nastja-submit-textb-container" style="display: none;">
+      <input type="text" id="nastja-user-input-2" placeholder="Type your answer here...">
+      <button id="nastja-submit-textb-2">Submit</button>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
+
 </html>
