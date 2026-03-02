@@ -109,10 +109,8 @@ button {
   margin-top: 5px;
 }
 
-#nastja-submit-textb-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} /* <--- This closing bracket tells the browser "I am finished with this ID" */
+#nastja-puzzle-container {
+  display: none; /* This hides it when the page first opens */
+}
   
 
