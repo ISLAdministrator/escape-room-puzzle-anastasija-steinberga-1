@@ -20,7 +20,7 @@ const userInput = document.getElementById('nastja-answer-input');
 
 submitBtn.addEventListener('click', function() {
   // This checks if the text matches exactly
-  if (userInput.value === "Mr.Strobel") {
+  if (userInput.value === "Mr Strobel") {
     userInput.style.border = "4px solid green";
     console.log("Access Granted!");
   } else {
