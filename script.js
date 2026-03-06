@@ -3,6 +3,8 @@ let firstSlide = document.getElementById('slide-1');
 let puzzleScreen = document.getElementById('isl-puzzle-screen');
 let submitBtn = document.getElementById('nastja-submit-btn');
 let successmsg = document.getElementById('nastja-success-message');
+let finalScreen = document.getElementById('nastja-puzzle-container');
+
 startButton.addEventListener('click', function() {
     // 1. Hide the intro text
     firstSlide.style.display = 'none';
@@ -51,3 +53,11 @@ submitBtn.addEventListener('click', function() {
     successMsg.style.display = "none";
   }
 });
+// This waits 3000 milliseconds (3 seconds) before running the code inside
+setTimeout(function() {
+    // 1. Hide the current game element
+    document.getElementById('your-game-container-id').style.display = 'none';
+    
+    // 2. Show the success screen
+    document.getElementById('nastja-puzzle-container').style.display = 'block';
+}, 3000);
