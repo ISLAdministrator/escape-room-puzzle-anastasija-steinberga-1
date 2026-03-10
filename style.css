@@ -126,3 +126,8 @@ button {
   display: none; /* Keeps it hidden at the start */
   margin-left: 10px; /* Adds space next to the button */
 }
+#locker-success-container {
+  display: none; /* This hides the element by default */
+  text-align: center;
+  color: #000000; /* ISL Cyan-400 */ 
+}
