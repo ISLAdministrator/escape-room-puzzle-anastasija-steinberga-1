@@ -113,6 +113,7 @@ button {
   display: none; /* This hides it when the page first opens */
 }
 #nastja-puzzle-container {
+  background-size: contain;
   position: absolute;
   top: 88%;    /* This moves the whole group down from the top */
   left: 50%;   /* This moves the whole group in from the left */
@@ -126,8 +127,16 @@ button {
   display: none; /* Keeps it hidden at the start */
   margin-left: 10px; /* Adds space next to the button */
 }
+/* This targets the container for your final image */
 #locker-success-container {
-  display: none; /* This hides the element by default */
+  display: none; /* This is the most important part! It keeps it hidden at the start. */
   text-align: center;
-  color: #000000; /* ISL Cyan-400 */ 
+  margin-top: 0px;
+}
+
+/* This styles the actual image inside that container */
+#locker-success-container img {
+  width: 80%; /* Adjust this percentage to make the image bigger or smaller */
+  border: 5px solid white;
+  border-radius: 50px;
 }
