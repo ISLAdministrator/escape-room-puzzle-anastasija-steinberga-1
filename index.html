@@ -9,22 +9,53 @@ DO NOT let AI code for you!!
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Escape Room</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <h1>Escape Room</h1>
+  <div id="slide-1" class="slide content-right">
+    <h1>Escape Room</h1>
+    <p>
+      You slip inside the nurses office and shut the door behind you with a soft click. The room is small so you look
+      at the whole thing in one sweep gaze. As you look around the nurses's desk, there you notice the nurses log with
+      some information. Right down after this passage, you will see the button that you will need to press to open one
+      specific page from nurses's log.
+    </p>
+    <button id="isl-start-btn">Enter the Puzzle</button>
+  </div>
 
-  <p>
-    Write the story of your escape room here.
-  </p>
+  <div id="isl-puzzle-screen" style="display: none;">
+    <input type="text" id="nastja-user-input" placeholder="Type your answer here...">
+    <button id="nastja-submit-textb">Submit</button>
 
-  <button id="button">Click me</button>
-
-  <p id="output"></p>
+    <div id="nastja-submit-textb-container" style="display: none;">
+      <input type="text" id="nastja-user-input-2" placeholder="Type your answer here...">
+      <button id="nastja-submit-textb-2">Submit</button>
+    </div>
+  </div>
+  <div id="nastja-puzzle-container">
+    <p>Who was rat-bitten?</p>
+    <input type="text" id="nastja-answer-input" placeholder="Type name here..." autocomplete="off">
+    <button  id="nastja-submit-btn">Check Answer</button>
+    <span id="nastja-success-message">GO!</span>
+  </div>
+  <div id="room-1-container">
+    <div id="room-1-patch"></div>
+  </div>
+  <script src="script.js"></script>
+  <div id="locker-success-container" style="display: none; text-align: center;">
+    <img src="escape-room-end.png" alt="Success!" style="max-width: 100%; height: auto;">
+    
+    <button id="next-exit-btn" style="display: none;">
+      Enter the next room
+    </button>
+</div>
 
   <script src="script.js"></script>
 </body>
