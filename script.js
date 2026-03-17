@@ -4,7 +4,7 @@ let firstSlide = document.getElementById('slide-1');
 let puzzleContainer = document.getElementById('nastja-puzzle-container');
 let submitBtn = document.getElementById('nastja-submit-btn');
 let successMsg = document.getElementById('nastja-success-message');
-
+let nextExitBtn = document.getElementById('next-exit-btn');
 // 2. Start Button Logic
 startButton.addEventListener('click', function () {
   firstSlide.style.display = 'none';
@@ -23,12 +23,24 @@ submitBtn.addEventListener('click', function () {
     successMsg.style.display = "inline";
 
     // TIMER: This starts only AFTER the click
-    setTimeout(function() {
-        // Hide the puzzle and show the final image
-        puzzleContainer.style.display = 'none';
-        document.getElementById('locker-success-container').style.display = 'block';
-    }, 2000); 
+    setTimeout(function () {
+      // Hide the puzzle and show the final image
+      puzzleContainer.style.display = 'none';
+      document.getElementById('locker-success-container').style.display = 'block';
+    }, 2000);
+    setTimeout(function () { document.getElementById('next-exit-btn').style.display = 'block'; }, 2000);
 
+    setTimeout(function () {
+      // Hide the puzzle and show the final image
+      puzzleContainer.style.display = 'none';
+      document.getElementById('locker-success-container').style.display = 'block';
+    }, 2000);
+    document.getElementById('next-exit-btn').addEventListener('click', function () {
+      window.location.href = 'https://isladministrator.github.io/escape-room-puzzle-juju-and-mari/';
+    });
+    setTimeout(function () {
+      document.getElementById('next-exit-btn').style.display = 'block';
+    }, 2000); // This waits 2 seconds AFTER the success screen appears!
   } else {
     // WRONG: Red border
     inputField.style.border = "4px solid red";
