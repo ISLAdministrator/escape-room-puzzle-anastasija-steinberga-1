@@ -28,14 +28,7 @@ submitBtn.addEventListener('click', function () {
       puzzleContainer.style.display = 'none';
       document.getElementById('locker-success-container').style.display = 'block';
     }, 2000);
-    setTimeout(function () { document.getElementById('next-exit-btn').style.display = 'block'; }, 2000);
-
-    setTimeout(function () {
-      // Hide the puzzle and show the final image
-      puzzleContainer.style.display = 'none';
-      document.getElementById('locker-success-container').style.display = 'block';
-    }, 2000);
-    document.getElementById('next-exit-btn').addEventListener('click', function () {
+       document.getElementById('next-exit-btn').addEventListener('click', function () {
       window.location.href = 'https://isladministrator.github.io/escape-room-puzzle-juju-and-mari/';
     });
     setTimeout(function () {
