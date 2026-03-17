@@ -18,24 +18,28 @@ submitBtn.addEventListener('click', function () {
   const theAnswer = inputField.value.toLowerCase().trim();
 
   if (theAnswer === "mr strobel") {
-    // CORRECT: Feedback happens immediately
+    // 1. Show immediate success feedback
     inputField.style.border = "4px solid green";
     successMsg.style.display = "inline";
 
-    // TIMER: This starts only AFTER the click
+    // 2. Wait 2 seconds, then swap to the final screen
     setTimeout(function () {
-      // Hide the puzzle and show the final image
       puzzleContainer.style.display = 'none';
       document.getElementById('locker-success-container').style.display = 'block';
+
+      // 3. Wait ANOTHER 2 seconds (while on the final screen) before showing the button
+      setTimeout(function () {
+        document.getElementById('next-exit-btn').style.display = 'block';
+      }, 2000);
+
     }, 2000);
-       document.getElementById('next-exit-btn').addEventListener('click', function () {
+
+    // 4. Make sure the button actually goes to the link when clicked
+    document.getElementById('next-exit-btn').onclick = function() {
       window.location.href = 'https://isladministrator.github.io/escape-room-puzzle-juju-and-mari/';
-    });
-    setTimeout(function () {
-      document.getElementById('next-exit-btn').style.display = 'block';
-    }, 2000); // This waits 2 seconds AFTER the success screen appears!
+    };
   } else {
-    // WRONG: Red border
+    // Wrong answer feedback
     inputField.style.border = "4px solid red";
     successMsg.style.display = "none";
   }

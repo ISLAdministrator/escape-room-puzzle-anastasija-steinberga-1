@@ -141,13 +141,13 @@ button {
   border-radius: 50px;
 }
 #next-exit-btn {
-  display: block;        /* This allows us to use auto-margins for centering */
-  margin: 40px auto;     /* 40px space on top/bottom, auto centers it left/right */
-  background-color: #ffffff; /* ISL Cyan-400 🟦 */
-  color: rgb(0, 0, 0);          /* White text for contrast */
-  padding: 12px 24px;    /* Adds space inside the button */
+  display: none; /* Crucial: starts hidden */
+  margin: 30px auto;
+  background-color: #31cce4; /* ISL Cyan */
+  color: white;
+  padding: 15px 30px;
   border: none;
-  border-radius: 8px;    /* Rounded corners */
-  font-size: 18px;
-  cursor: pointer;       /* Shows the hand icon when hovering */
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
 }
