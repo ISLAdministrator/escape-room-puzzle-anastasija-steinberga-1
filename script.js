@@ -14,7 +14,7 @@ submitBtn.addEventListener('click', function () {
   const inputField = document.getElementById('nastja-answer-input');
   const theAnswer = inputField.value.toLowerCase().trim();
 
-  if (theAnswer === "mr strobel") {
+  if (theAnswer.toLowerCase() === "mr strobel" || "mr. strobel" || "mrstrobel" || "mr.strobel") {
     inputField.style.border = "4px solid green";
     successMsg.style.display = "inline";
 
